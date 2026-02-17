@@ -6,7 +6,7 @@ function Home() {
       <h1>zzzzzzzzzzzzzzzzzzz</h1>
       <Dengue/>
     </div>
-  </>
+  </> 
   )
 }
 export default Home;

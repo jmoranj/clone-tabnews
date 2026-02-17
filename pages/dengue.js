@@ -61,10 +61,19 @@ const asciiArt = String.raw`
                                                                                                                                             
                                                                                                                                             
                                                                                                                                             
-`
+`;
 
 export default function Dengue() {
   return (
-    <pre style={{ fontSize: '0.5rem', margin: 0, padding: 0, fontFamily: 'monospace' }}>{asciiArt}</pre>
+    <pre
+      style={{
+        fontSize: "0.5rem",
+        margin: 0,
+        padding: 0,
+        fontFamily: "monospace",
+      }}
+    >
+      {asciiArt}
+    </pre>
   );
 }
