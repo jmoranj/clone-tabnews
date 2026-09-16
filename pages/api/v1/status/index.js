@@ -1,5 +1,8 @@
-function status(request, response) {
-  response.status(200).json({ Chave: "valor" })
+import database from "../../../../infra/database.js";
+
+async function status(request, response) {
+  const result = await database.query('SELECT 1 + 1')
+  response.status(200).json({ Chave: {result} })
 }
 
 export default status
