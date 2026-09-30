@@ -7,9 +7,7 @@ async function query(queryObject){
     user: process.env.POSTGRES_USER ?? "postgres",
     database: process.env.POSTGRES_DB ?? "postgres",
     password: process.env.POSTGRES_PASSWORD ?? "local_pass",
-    ssl: {
-      rejectUnauthorized: false,
-    },
+    ssl: process.env.NODE_ENV === 'development' ? false : true,
   })
   
   try {
